@@ -1,4 +1,4 @@
-let edad = prompt("¿Cuántos años tienes?");
+let edad = parseInt(prompt("¿Cuántos años tienes?"));
 
 if (edad >= 65) {
     console.log("Jubilado");
