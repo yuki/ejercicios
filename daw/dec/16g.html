@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="js/16g.js" defer></script>
+    <link href="css/16g.css" rel="stylesheet">
+</head>
+<body>
+    <!--
+        Ejemplo similar a https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_stoppropagation
+    -->
+    <div id="div1">
+        Div1
+        <div id="div2">Div2</div>
+    </div>
+    Stop propagation:
+    <input type="checkbox" id="check">
+
+    <p>
+        Como div2 está dentro del div1, al hacer click en Div2 también se hacen en Div1.
+    </p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+button,
+div,
+pre {
+  margin: 0.5rem;
+}
+
+div {
+  padding: 1rem;
+  border: 1px solid black;
+}

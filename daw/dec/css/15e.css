@@ -1,0 +1,12 @@
+.destacado {
+    color: red;
+    font-weight: bold;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.normal {
+    font-size: 24px;
+}
