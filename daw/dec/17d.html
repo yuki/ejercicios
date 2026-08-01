@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="js/17d.js" defer></script>
+    <link href="css/17d.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--
+        QUITA LOS REQUIRED PARA QUE FUNCIONE LA VALIDACIÓN Y CAMBIO DE CSS
+    
+    -->
+    <form id="registro" method="post">
+
+    <div id="divnombre">
+        <label for="nombre">
+            Nombre
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            required
+            minlength="3">
+        <span id="errorNombre"></span>
+    </div>
+
+    <div id="divemail">
+        <label for="email">
+            Correo electrónico
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            required>
+        <span id="errorEmail"></span>
+    </div>
+
+    <div id="divedad">
+        <label for="edad">
+            Edad
+        </label>
+        <input
+            type="number"
+            id="edad"
+            min="18"
+            max="120"
+            required>
+        <span id="errorEdad"></span>
+    </div>
+
+    <div id="divpassword">
+        <label for="password">
+            Contraseña
+        </label>
+        <input
+            type="password"
+            id="password"
+            minlength="8"
+            required>
+        <span id="errorPassword"></span>
+    </div>
+
+    <div id="divpassword2">
+        <label for="password2">
+            Repetir contraseña
+        </label>
+        <input
+            type="password"
+            id="password2"
+            minlength="8"
+            required>
+    </div>
+
+    <div id="divcheckbox">
+        <input
+            type="checkbox"
+            id="condiciones"
+            required>
+        <label for="condiciones">
+            Acepto las condiciones de uso
+        </label>
+        <span id="errorEdad"></span>
+    </div>
+
+    <button>Registrarse</button>
+
+</form>
+</body>
+</html>

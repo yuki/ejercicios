@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="js/17e.js" defer></script>
+    <link href="css/17e.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--
+        QUITA LOS REQUIRED PARA QUE FUNCIONE LA VALIDACIÓN Y CAMBIO DE CSS
+    -->
+    <h1>Alta de alumno</h1>
+
+    <form id="formulario" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input
+            type="text"
+            id="nombre"
+            required>
+
+        <label for="apellidos">Apellidos</label>
+        <input
+            type="text"
+            id="apellidos"
+            required>
+
+        <label for="email">Correo electrónico</label>
+        <input
+            type="email"
+            id="email"
+            required>
+
+        <label for="edad">Edad</label>
+        <input
+            type="number"
+            id="edad"
+            min="16"
+            max="99"
+            required>
+
+        <label for="curso">Curso</label>
+        <select
+            id="curso"
+            required>
+            <option value="">Seleccione un curso</option>
+            <option>DAW</option>
+            <option>DAM</option>
+            <option>ASIR</option>
+        </select>
+
+        <fieldset>
+            <legend>Turno</legend>
+            <label>
+                <input
+                    type="radio"
+                    name="turno"
+                    value="mañana"
+                    required>
+                Mañana
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="turno"
+                    value="tarde">
+                Tarde
+            </label>
+
+        </fieldset>
+        <label for="comentarios">
+            Comentarios
+        </label>
+
+        <textarea
+            id="comentarios"
+            rows="5"></textarea>
+        <label>
+            <input
+                type="checkbox"
+                id="privacidad"
+                required>
+            Acepto la política de privacidad
+        </label>
+
+        <button>
+            Registrar alumno
+        </button>
+    </form>
+
+</body>
+</html>

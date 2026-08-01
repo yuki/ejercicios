@@ -1,0 +1,13 @@
+
+div {
+  padding-bottom: 1rem;
+}
+
+/* input:valid {
+    border: 2px solid green;
+} */
+
+/* forzar color de inicio*/
+input:invalid {
+    border: 2px solid red;
+}

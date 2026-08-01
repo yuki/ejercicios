@@ -1,0 +1,10 @@
+
+div {
+  padding: 1rem;
+}
+
+.error {
+    border-radius: 10px;
+    border: 2px solid red;
+    background-color: rgb(233, 91, 91);
+}

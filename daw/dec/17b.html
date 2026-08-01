@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="js/17b.js" defer></script>
+    <link href="css/17b.css" rel="stylesheet">
+</head>
+<body>
+    <form action="17b.html" method="post" autcomplete="on" name="registro" id="registro">
+        <div><label for="nombre">Nombre</label></div>
+        <div><input type="text" name="nombre" id="nombre" required></div>
+        <div><label for="password" required>Password</label></div>
+        <div><input type="password" name="password" min=6 max=12 id="password" required></div>
+        <div><label for="email">email</label></div>
+        <div><input type="email" name="email" placeholder="hola@example.com" id="email" required></div>
+
+        <div><label for="number">number</label></div>
+        <div><input type="number" name="number" min=5></div>
+        <div><label for="number2">number2</label></div>
+        <div><input type="number" name="number2" min=6 max=50 step=2></div>
+
+        <div><label for="number">date</label></div>
+        <div><input type="date" name="date"></div>
+        <div><label for="datetime-local">datetime-local</label></div>
+        <div><input type="datetime-local" name="datdatetime-locale"></div>
+        <div><label for="month">month</label></div>
+        <div><input type="month" name="month"></div>
+        <div><label for="time">time</label></div>
+        <div><input type="time" name="time"></div>
+        <div><label for="week">week</label></div>
+        <div><input type="week" name="week"></div>
+
+        <div><label for="range">range</label></div>
+        <div><input type="range" name="range"></div>
+        <div><label for="range2">range2</label></div>
+        <div><input type="range" name="range2" min=0 max=30 step=2></div>
+
+        <fieldset>
+            <legend>Choose your interests:</legend>
+            <div>
+                <input type="checkbox" id="coding" name="interest" value="coding" checked />
+                <label for="coding">Coding</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music">Music</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Please select your preferred contact method:</legend>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">Email</label>
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label for="contactChoice2">Phone</label>
+                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                <label for="contactChoice3">Mail</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="hr-select">Your favorite food</label> <br />
+            <select name="foods" id="hr-select">
+            <option value="">Choose a food</option>
+            <hr />
+            <optgroup label="Fruit">
+                <option value="apple">Apples</option>
+                <option value="banana">Bananas</option>
+                <option value="cherry">Cherries</option>
+                <option value="damson">Damsons</option>
+            </optgroup>
+            <hr />
+            <optgroup label="Fish">
+                <option value="cod">Cod</option>
+                <option value="haddock">Haddock</option>
+                <option value="salmon">Salmon</option>
+                <option value="turbot">Turbot</option>
+            </optgroup>
+            </select>
+        </div>
+        <textarea name="textarea" rows="5" cols="30">
+Write something here…
+        </textarea>
+        <div>
+            <input type="color" id="foreground" name="foreground" value="#e66465" />
+            <label for="foreground">Foreground color</label>
+        </div>
+
+        <div>
+          <label for="avatar">Choose a profile picture:</label>
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        </div>
+        <div>
+          <input type="hidden" id="postId" name="postId" value="34657" />
+        </div>
+
+        <div>
+            <!-- método antiguo -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+
+            <!-- mejor así -->
+            <button id="login">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
