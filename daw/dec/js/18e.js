@@ -36,27 +36,27 @@ function nuevaPromesa(valor) {
 // creamos una nueva promesa y en cada "then()" escribimos
 // la función flecha a realizar
 
-// const promesa = nuevaPromesa(true)
-// promesa
-//   .then((respuesta)=>{
-//       console.log(`Éxito 1: ${respuesta}`)
-//       return respuesta;
-//   })
-//   .then((respuesta)=> {
-//       r = respuesta.toUpperCase();
-//       console.log(`Éxito 2: ${r}`);
-//       return r;
-//   })
-//   .then((respuesta)=> {
-//       r = respuesta.toLowerCase();
-//       console.log(`Éxito 3: ${r}`);
-//   })
-//   .catch((error)=> {
-//       console.log(`Error 1: ${error}`)
-//   })
-//   .finally(()=>{
-//       console.log("Promesa 1 finalizada.")
-//   });
+const promesa = nuevaPromesa(true)
+promesa
+  .then((respuesta)=>{
+      console.log(`Éxito 1: ${respuesta}`)
+      return respuesta;
+  })
+  .then((respuesta)=> {
+      r = respuesta.toUpperCase();
+      console.log(`Éxito 2: ${r}`);
+      return r;
+  })
+  .then((respuesta)=> {
+      r = respuesta.toLowerCase();
+      console.log(`Éxito 3: ${r}`);
+  })
+  .catch((error)=> {
+      console.log(`Error 1: ${error}`)
+  })
+  .finally(()=>{
+      console.log("Promesa 1 finalizada.")
+  });
 
 
 
@@ -67,17 +67,17 @@ function nuevaPromesa(valor) {
 // a la función que queremos ejecutar y le pasamos como parámetro
 // el resultado del anterior.
 
-// const promesa2 = nuevaPromesa(true)
-// promesa2
-//   .then(r => igual(r))
-//   .then(r => mayus(r))
-//   .then(r => minus(r))
-//   .catch((error)=> {
-//       console.log(`Error 2: ${error}`)
-//   })
-//   .finally(()=>{
-//       console.log("Promesa 2 finalizada.")
-//   });
+const promesa2 = nuevaPromesa(true)
+promesa2
+  .then(r => igual(r))
+  .then(r => mayus(r))
+  .then(r => minus(r))
+  .catch((error)=> {
+      console.log(`Error 2: ${error}`)
+  })
+  .finally(()=>{
+      console.log("Promesa 2 finalizada.")
+  });
 
 
 
