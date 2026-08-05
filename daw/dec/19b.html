@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="js/19b.js" defer></script>
+    <link href="css/19b.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Fetch API</h1>
+
+    <button id="abrirModal" class="boton-abrir" type="button">Añadir usuario</button>
+
+    <div id="modalUsuario" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+        <div class="modal-contenido">
+            <h2 id="modalTitulo">Nuevo usuario</h2>
+            <form id="formUsuario" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" name="usuario" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="campo">
+                    <label for="calle">Calle</label>
+                    <input id="calle" name="calle" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input id="ciudad" name="ciudad" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="codigoPostal">Código postal</label>
+                    <input id="codigoPostal" name="codigoPostal" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="web">Web</label>
+                    <input id="web" name="web" type="url" required>
+                </div>
+                <div class="acciones">
+                    <button id="cerrarModal" type="button">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+                <p id="mensajeFormulario" class="mensaje"></p>
+            </form>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Website</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="usuarios">
+        </tbody>
+    </table>
+    
+
+</body>
+</html>
