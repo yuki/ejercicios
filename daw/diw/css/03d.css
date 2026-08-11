@@ -1,0 +1,23 @@
+body {
+    color:gray;
+}
+
+div#contenedor1 {
+    color: green;
+    border: 2px solid red;
+}
+
+div#contenedor2 {
+    border: 2px solid blue;
+    color: black;
+}
+
+p {
+    /* heredamos el border del padre, que normalmente no se hereda*/
+    border: inherit;
+}
+
+div#contenedor2 p {
+    /*forzamos a que el color del borde sea distinto al del padre*/
+    border-color:aqua;
+}

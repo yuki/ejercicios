@@ -1,0 +1,11 @@
+
+#contenedor1 {
+    border: 1px solid black;
+    width: 200px;
+    transform: rotate(-45deg);
+}
+#contenedor2 {
+    border: 1px solid red;
+    width: 200px;
+    transform: rotate(0.5turn);
+}

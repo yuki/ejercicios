@@ -1,0 +1,10 @@
+#contenedor1 {
+    border: 1px solid black;
+    font-size: 20px;
+    margin: 2em;
+}
+
+#contenedor2 {
+    border: 1px solid red;
+    margin: 1em;
+}

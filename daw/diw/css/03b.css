@@ -1,0 +1,26 @@
+/*
+Ejemplo sencillo para analizar la especificidad:
+- selector de tipo: p, h1, h2, h3
+- selector de clase: .base, .azul, ...
+- selector de ID: #titulo, #importante
+- !important: fuerza la prioridad máxima
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+p { color: black;}
+h1 { color: darkgray;}
+h2 { color: purple;}
+h3 { color: brown;}
+#titulo { color: red;}
+.base { color: green;}
+h2.azul { color: blue;}
+p.destacado { color: orange;}
+h3.verde { color: olive;}
+p.resaltado { color: teal;}
+p.importante { color: fuchsia !important;}
+#importante { color: darkblue !important;}
+h2.gris { color: gray;}

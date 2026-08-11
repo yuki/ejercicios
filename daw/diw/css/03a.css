@@ -1,0 +1,17 @@
+/*
+ El orden es importante, si hay dos reglas que aplican a un mismo elemento, se aplicará la última.
+ 
+ Pero en este caso importa más la especificidad de las reglas, es decir, qué tipo de selector se ha usado.
+*/
+
+#miId {
+    color: red;
+}
+
+.miclase {
+    color: green;
+}
+
+p {
+    color: blue;
+}

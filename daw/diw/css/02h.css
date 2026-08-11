@@ -1,0 +1,19 @@
+button:hover {
+    background-color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+button:active {
+    transform: scale(1.15);
+}
+
+a:visited {
+    color: purple;
+}

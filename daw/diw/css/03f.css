@@ -1,0 +1,23 @@
+/*
+    comenta la siguiente línea para ver la prioridad de los layers
+*/
+@layer componentes, main ;
+
+/* También se pueden especificar así:
+@layer componentes;
+@layer main;
+*/
+
+@layer main {
+    p {
+        color:blue;
+    }
+}
+
+@layer componentes {
+    p {
+        color:red;
+    }
+}
+
+ 

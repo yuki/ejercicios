@@ -1,0 +1,13 @@
+input[type] {
+    border: 1px solid black;
+}
+input[type="email"] {
+    background-color: lightblue;
+}
+
+a[target] {
+    font-weight: bold;
+}
+a[target="_blank"] {
+    color: red;
+}

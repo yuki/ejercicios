@@ -1,0 +1,11 @@
+/*
+Cuidado con el orden de estas reglas, ya que la última tiene prioridad sobre las anteriores.
+*/
+
+article p {
+    color: blue;
+}
+
+article > p {
+    color: red;
+}
