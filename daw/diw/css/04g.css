@@ -1,0 +1,76 @@
+.a {
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px;
+}
+/*al poner margin con % dependerá del tamaño de la ventana*/
+.b {
+    height: 50px;
+    width: 500px;
+    border: 1px solid red;
+    margin: 5%;
+}
+
+.c {
+    height: 50px;
+    width: 500px;
+    border: 1px solid green;
+    margin: 0 20px;
+}
+
+.d {
+    height: 50px;
+    width: 500px;
+    border: 1px solid purple;
+    margin: 0 40px;
+}
+
+/*  poniendo "margin:auto" no hay margen arriba ni abajo */
+.e {
+    height: 50px;
+    width: 500px;
+    border: 1px solid purple;
+    margin: auto;
+}
+
+/* forzamos un margen arriba y abajo, y auto para izquierda y derecha*/
+.e2 {
+    height: 50px;
+    width: 500px;
+    border: 1px solid purple;
+    margin: 10px auto;
+}
+
+
+.f {
+    height: 150px;
+    width: 500px;
+    border: 1px solid blue;
+    margin: 30px;
+}
+.g {
+    width:200px;
+    border: 1px solid cyan;
+    margin: auto;
+}
+.h {
+    height: 150px;
+    width: 500px;
+    border: 1px solid blue;
+}
+
+/* comprueba qué ocurre al poner margin negativo*/
+.i {
+    width:200px;
+    border: 1px solid cyan;
+    margin: -15px 0 0 0;
+}
+
+.j {
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: cyan;
+    margin: auto;
+}

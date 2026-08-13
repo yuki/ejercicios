@@ -1,0 +1,71 @@
+
+.a {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-image: url(../img/moon.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.b {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-image: url(../img/moon.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.c {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position: 10% 30%;
+}
+.d {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position: 15px 100px;
+}
+.e {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position:  center;
+    background-size: 100px 50px;
+}
+.f {
+    height: 300px;
+    width: 500px;
+    color:white;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position:  center;
+    background-size: cover;
+}
+.g {
+    height: 300px;
+    width: 500px;
+    color:white;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position:  center;
+    background-size: contain;
+}
+.h {
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-image: url(../img/moon.jpg);
+    background-position:  center;
+    background-attachment: fixed;
+}

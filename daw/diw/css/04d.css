@@ -1,0 +1,46 @@
+.a {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(red, orange);
+}
+.b {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(to right, red, orange, yellow);
+}
+.c {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(to bottom, green, blue, purple, red);
+}
+.d {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(45deg, red 25%, yellow 50%, blue 100% );
+}
+.e {
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(circle, white, blue);
+}
+.f {
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(ellipse at top, white, blue, purple);
+}
+.g {
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(
+        circle,
+        white,
+        yellow,
+        orange,
+        red
+    );
+}
+.h {
+    height: 500px;
+    width: 500px;
+    background: conic-gradient(red, orange, yellow, green, blue, purple, red);
+}
