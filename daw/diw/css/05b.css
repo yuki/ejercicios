@@ -1,0 +1,39 @@
+:root {
+  --color-main: #2563eb;
+  --color-ok: #16a34a;
+  --color-error: #dc2626;
+  --color-text: #222222;
+  --espacio-md: 1rem;
+  --bordes: 2px;
+  --radio: 10px;
+}
+
+@function --double(--value) {
+  result: calc(var(--value) * 2);
+}
+
+
+h1 {
+    color: var(--color-main);
+}
+
+.ok {
+    border: var(--bordes) solid var(--color-ok);
+    border-radius: var(--radio);
+    padding: var(--espacio-md);
+    background-color: if(
+        style(--black: true): black;
+        else: white;
+    );
+    color: if(
+        style(--black: true): white;
+        else: black;
+    );
+}
+
+
+.ejemplo {
+  --base-spacing: 10px;
+  border-radius: --double(var(--espacio-md));
+  padding: --double(var(--espacio-md));
+}

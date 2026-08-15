@@ -1,0 +1,43 @@
+
+.a, .b, .c, .d {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    padding:10px;
+}
+
+.a {
+    overflow: auto;
+}
+
+.b {
+    overflow: hidden;
+}
+
+.c {
+    overflow: scroll;
+}
+
+.d {
+    overflow: visible;
+}
+
+.e, .f {
+    margin-top: 100px;
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+    padding:10px;
+}
+
+.e {
+    max-width: 150px;
+    overflow-x: auto;
+}
+
+.f {
+    max-width: 180px;
+    max-height: 150px;
+    overflow-y: auto;
+}

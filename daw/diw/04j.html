@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/04j.css">
+</head>
+<body>
+    <h2>Ejemplos de Propiedades de Dimensionamiento</h2>
+
+    <h3>width (Ancho Fijo)</h3>
+    <div class="width-ejemplo">
+        Este div tiene width: 250px; - Tiene un ancho fijo de 250 píxeles sin importar el contenido.
+    </div>
+
+    <h3>min-width (Ancho Mínimo)</h3>
+    <div class="min-width-ejemplo">
+        Este div tiene min-width: 300px; - Nunca será más estrecho de 300 píxeles, pero puede crecer si el contenido es más grande.    </div>
+
+    <h3>max-width (Ancho Máximo)</h3>
+    <div class="max-width-ejemplo">
+        Este div tiene max-width: 400px; - Nunca superará los 400 píxeles de ancho. Si el contenido es más pequeño, se encogerá. Esta es una propiedad muy utilizada para diseño responsivo.
+    </div>
+
+    <h3>height (Altura Fija)</h3>
+    <div class="height-ejemplo">
+        Este div tiene height: 150px; - Tiene una altura fija de 150 píxeles. Si el contenido ocupa más espacio, aparecerá overflow (el contenido se saldrá de la caja).
+    </div>
+
+    <h3>min-height (Altura Mínima)</h3>
+    <div class="min-height-ejemplo">
+        Este div tiene min-height: 100px; - La altura mínima es 100 píxeles, pero crecerá si el contenido lo requiere.
+    </div>
+
+    <h3>max-height (Altura Máxima)</h3>
+    <div class="max-height-ejemplo">
+        Este div tiene max-height: 120px; - La altura máxima es 120 píxeles. Si el contenido es más alto, aparecerá una barra de desplazamiento (scroll). Este contenido contiene varias líneas para demostrar cómo funciona el overflow cuando el contenido supera la altura máxima.
+    </div>
+
+    <h3>Combinación: min-width y max-width (Responsivo)</h3>
+    <div class="responsive-ejemplo">
+        Este div tiene min-width: 200px; y max-width: 600px; - Esto significa que el ancho nunca será menor a 200px ni mayor a 600px. Esta es una técnica común para diseño responsivo que se adapta entre estos límites.
+    </div>
+
+    <h3>Combinación: min-height y max-height</h3>
+    <div class="altura-limitada-ejemplo">
+        Este div tiene min-height: 80px; y max-height: 200px; - La altura está limitada entre 80 y 200 píxeles. Si el contenido excede 200px, aparecerá scroll. Puedes agregar más contenido aquí para ver cómo se comporta cuando alcanza el máximo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+</body>
+</html>

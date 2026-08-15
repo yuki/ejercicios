@@ -1,0 +1,60 @@
+:root {
+  --color-main: #2563eb;
+  --color-ok: #16a34a;
+  --color-error: #dc2626;
+  --color-text: #222222;
+  --espacio-md: 1rem;
+  --bordes: 2px;
+  --radio: 10px;
+}
+
+h1 {
+    color: var(--color-main);
+}
+a {
+    color: var(--color-main);
+}
+.ok {
+    border: var(--bordes) solid var(--color-ok);
+    border-radius: var(--radio);
+    padding: var(--espacio-md);
+}
+
+.tarjeta {
+    --color-local: blue;
+}
+
+.tarjeta p {
+    color: var(--color-local);
+}
+
+.alerta {
+    --color: #dc2626;
+
+    color: var(--color);
+    border: var(--bordes) solid var(--color);
+    padding: var(--espacio-md);
+    border-radius: var(--radio);
+}
+
+.exito {
+    --color: #16a34a;
+
+    color: var(--color);
+}
+
+.boton {
+    --color-boton: #2563eb;
+
+    background: var(--color-boton);
+    border: 2px solid var(--color-boton);
+    color: white;
+}
+
+.boton-rojo {
+    --color-boton: #dc2626;
+}
+
+.boton-verde {
+    --color-boton: #16a34a;
+}

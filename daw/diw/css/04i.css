@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+.a {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border: 10px solid black;
+    background: darkseagreen;
+    display: inline-block;
+}
+/* ejemplo de box-sizing de https://www.geeksforgeeks.org/css/how-is-border-box-different-from-content-box/ */
+.content-box {
+    box-sizing: content-box;
+}
+.border-box {
+    box-sizing: border-box;
+}
