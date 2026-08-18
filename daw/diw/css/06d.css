@@ -1,0 +1,77 @@
+
+/* 
+  Comprueba qué pasa al comentar los z-index.
+*/
+
+.ej1 {
+  margin-top: 60px;
+}
+
+.caja {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.roja {
+    background: crimson;
+    z-index: 20;
+}
+
+.azul {
+    background: royalblue;
+    z-index: 10;
+    left: 60px;
+    top: -60px;
+}
+
+
+
+
+/* Copìado del ejercicio 6b */
+
+
+/* navbar */
+
+ul.navbar {
+  background-color: chocolate;
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  padding: 20px;
+  margin:0;
+  /* AÑADIDO ESTE PARÁMETRO PARA MEJORAR EL NAVBAR Y EL SCROLL */
+  z-index:500;
+}
+
+ul.navbar li {
+  display: inline;
+  padding-right: 20px;
+}
+
+ul.navbar a {
+  color: white;
+}
+
+#arriba {
+  position:fixed;
+  bottom: 50px;
+  right: 50px;
+  margin:0;
+}
+
+
+/* ej4 */
+
+.sticky {
+  position: sticky;
+  top: 60px;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+.ej4-texto {
+  height:500px
+}
+

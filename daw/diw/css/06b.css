@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  margin-top:20px;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+/* 
+Ejemplo de MDN:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position
+*/
+#two {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+
+#ej2 {
+  padding-top:10px;
+}
+
+.padre {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: green;
+}
+
+.hijo {
+  /* Qué pasa si al padre le quitas el position?*/
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  top: 20px;
+  left: 10px;
+}
+
+
+#ej3 {
+  padding-top:30px;
+}
+.producto {
+    position: relative;
+}
+
+.oferta {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: crimson;
+    color: white;
+}
+
+.producto2 {
+    position: relative;
+    width: 200px;
+}
+/* centramos el descuento */
+.oferta2 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background: crimson;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+
+/* navbar */
+
+ul.navbar {
+  background-color: chocolate;
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  padding: 20px;
+  margin:0;
+}
+
+ul.navbar li {
+  display: inline;
+  padding-right: 20px;
+}
+
+ul.navbar a {
+  color: white;
+}
+
+#arriba {
+  position:fixed;
+  bottom: 50px;
+  right: 50px;
+  margin:0;
+}
+
+
+/* ej4 */
+
+.sticky {
+  position: sticky;
+  top: 60px;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+.ej4-texto {
+  height:500px
+}

@@ -1,0 +1,42 @@
+.caja {
+    width: 100px;
+    height: 100px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.roja {
+  background: red;
+}
+.azul {
+  /* si descomentas la siguiente regla, ¿qué pasa? */
+  /* display:none; */
+  background: blue;
+}
+.verde {
+  background: green;
+}
+
+.tabla-ejemplo {
+    margin-top: 30px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.tabla-ejemplo th,
+.tabla-ejemplo td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+}
+
+.columna-colapsada {
+    /* visibility: collapse; no funciona de forma fiable en columnas */
+    display: none;
+}
+
+.fila-colapsada {
+    visibility: collapse;
+}
+

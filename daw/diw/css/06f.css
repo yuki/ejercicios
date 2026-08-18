@@ -1,0 +1,56 @@
+.caja {
+    width: 100px;
+    height: 100px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.roja {
+  background: red;
+}
+.azul {
+  /* si descomentas la siguiente regla, ¿qué pasa? */
+  /* display:none; */
+  background: blue;
+}
+.verde {
+  
+  background: rgba(0, 128, 0, 0.5);
+  border: 3px solid black;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.poco-opacity {
+  /* 
+    fijate cómo afecta al borde y también al fondo;
+    compara el fondo de la caja visibility y opacity y mira cómo en opacity
+    el borde se vuelve un poco transparente, y también el fondo un poco más.
+  */
+  opacity:0.5;
+}
+
+
+.imagen {
+    width:200px;
+    opacity: 0.5;
+    /* ¿qué pasa si quitas esta regla? */
+    transition: opacity 0.3s;
+    margin: 30px 0 100px 0;
+}
+.imagen:hover {
+    opacity: 1;
+}
+
+.oferta2 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    background: crimson;
+    color: white;
+    z-index: 10;
+}

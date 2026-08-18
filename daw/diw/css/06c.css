@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.fotol {
+  float: left;
+  margin-right: 20px;
+}
+
+.fotor {
+  float: right;
+  margin-left: 20px;
+}
