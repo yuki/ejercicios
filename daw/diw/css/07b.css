@@ -1,0 +1,84 @@
+.contenedor {
+    display:flex;
+    border: 1px solid red;
+}
+
+.caja {
+    width:350px;
+    height: 50px;
+    border: 1px solid black;
+}
+.x {
+    display: flex;
+}
+
+.e1 {
+    flex-flow: row wrap;
+    gap: 0px;
+}
+
+.e2 {
+    flex-direction: row-reverse;
+}
+
+.e3 {
+    flex-direction: column;
+}
+
+.e4 {
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.b1 {
+    flex-wrap: nowrap;
+}
+
+.b2 {
+    width: 105px;
+    flex-wrap: wrap;
+}
+
+.b3 {
+    width: 120px;
+    flex-wrap: wrap-reverse;
+}
+
+
+.c1, .c3 {
+    flex-grow: 1;
+}
+.c2 {
+    flex-grow: 2;
+}
+
+
+.c4, .c5, .c6 {
+    flex-basis: 650px;
+}
+
+.c4 {
+    flex-shrink: 0;
+}
+
+.o1 {
+    order: 3;
+}
+.o2 {
+    order: 1;
+}
+.o3 {
+    order: 2;
+}
+
+.as {
+    height:100px;
+}
+
+.als1 {
+    align-self:center;
+}
+.als3 {
+    align-self:last baseline;
+}
+

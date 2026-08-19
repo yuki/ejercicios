@@ -1,0 +1,61 @@
+/* 
+Ejemplo obtenido de MDN:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items
+*/
+
+
+.flex {
+  min-height: 200px;
+  width: 500px;
+  align-items: initial; /* Change the value in the live sample */
+  border: solid 5px transparent;
+  gap: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8c8c9f;
+  border-color: magenta;
+}
+
+#item1 {
+  background-color: #8cffa0;
+  min-height: 30px;
+}
+
+#item2 {
+  background-color: #a0c8ff;
+  min-height: 50px;
+}
+
+#item3 {
+  background-color: #ffa08c;
+  min-height: 40px;
+}
+
+#item4 {
+  background-color: #ffff8c;
+  min-height: 60px;
+}
+
+#item5 {
+  background-color: #ff8cff;
+  min-height: 70px;
+}
+
+#item6 {
+  background-color: #8cffff;
+  min-height: 50px;
+  font-size: 30px;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+div > div {
+  box-sizing: border-box;
+  border: 2px solid white;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

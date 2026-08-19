@@ -1,0 +1,47 @@
+.contenedor {
+    display:flex;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.caja {
+    width:50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.x {
+    display: flex;
+}
+
+.e1 {
+    flex-flow: row wrap;
+    row-gap: 30px;
+}
+
+.e2 {
+    flex-direction: row-reverse;
+}
+
+.e3 {
+    flex-direction: column;
+}
+
+.e4 {
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.b1 {
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.b2 {
+    width: 105px;
+    flex-wrap: wrap;
+}
+
+.b3 {
+    width: 120px;
+    flex-wrap: wrap-reverse;
+}

@@ -1,0 +1,33 @@
+.imagen {
+    width:150px;
+    height:250px;
+    border: 1px solid black;
+}
+
+.a {
+    width:450px;
+    height:450px;
+    object-fit: none;
+    object-position: 25% 50%;
+}
+
+.b {
+    object-fit: cover;
+    object-position: left;
+}
+
+.c {
+    object-fit: cover;
+    object-position: right;
+}
+
+.d {
+  width:150px;
+  height: 150px;
+  object-fit: none;
+  object-position: center left;
+}
+
+.e {
+  object-fit: cover;
+}
