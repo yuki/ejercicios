@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin:0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: #1f2937;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+        margin: 0;
+    }
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.header nav .active {
+    border-bottom: 2px solid white;
+}
+
+.header nav a:hover {
+    color: #2f7fbf;
+}
+
+
+/* Si usamo una lista en el nav */
+/* .menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+} */
+
+
+main {
+    height: 1000px;
+}
+
+
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        /* si queremos que sea fija */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header nav {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    form {
+        display: inline;
+    }
+
+}

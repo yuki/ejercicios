@@ -1,0 +1,56 @@
+nav {
+  height: 50px;
+  background-color: chocolate;
+  display: flex;
+}
+
+nav *{
+  display: inline;
+}
+
+nav span {
+  margin: 1em;
+}
+
+/* en móvil se quita el sistema de búsqueda de la barra de navegación por falta de espacio,
+  se debería poner en otro sitio
+*/
+nav input {
+  display: none;
+}
+
+#opciones {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.5rem;
+    background-color: chocolate;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* Para  escritorio */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        background-color: red;
+    }
+
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    nav input {
+      display: inline;
+      margin: 1em;
+    }
+}

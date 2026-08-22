@@ -1,0 +1,44 @@
+
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "logo head head"
+    "nav  main ads"
+    ".  foot .";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+}
+
+#page > #logo {
+  grid-area: logo;
+  background-color: chocolate;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > #ads {
+  grid-area: ads;
+  background-color: cyan;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}
+
