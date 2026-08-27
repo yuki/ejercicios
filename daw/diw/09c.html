@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diseño responsive</title>
+    <link rel="stylesheet" href="css/09c.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">MiWeb</h1>
+        <nav>
+            <a href="#" class="active">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+
+            <!-- 
+                PODEMOS USAR UNA LISTA:
+
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            -->
+        </nav>
+        <span>
+            <form class="search">
+                <input
+                    type="search"
+                    placeholder="Buscar..."
+                >
+            </form>
+            <button>Acceder</button>
+        </span>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Panel</h2>
+            <nav>
+                <a class="active" href="#">Inicio</a>
+                <a href="#">Alumnos</a>
+                <a href="#">Cursos</a>
+                <a href="#">Configuración</a>
+            </nav>
+        </aside>
+        <main>
+            <h1>Contenido principal</h1>
+
+            <div id="tarjetas">
+
+                <!-- Esto en backend sería un bucle para mostrar distintas tarjetas -->
+                <article class="card">
+                    <img src="img/moon.jpg" 
+                        alt="Curso de HTML">
+                    <h2>Curso de HTML <span class="badge">Nuevo</span></h2>
+                    <p>
+                        Aprende los fundamentos 
+                        del desarrollo web.
+                    </p>
+                    <a href="#" class="button">Ver curso</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/moon.jpg" 
+                        alt="Curso de HTML">
+                    <h2>Curso de HTML</h2>
+                    <p>
+                        Aprende los fundamentos 
+                        del desarrollo web.
+                    </p>
+                    <a href="#" class="button">Ver curso</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/moon.jpg" 
+                        alt="Curso de HTML">
+                    <h2>Curso de HTML</h2>
+                    <p>
+                        Aprende los fundamentos 
+                        del desarrollo web.
+                    </p>
+                    <a href="#" class="button">Ver curso</a>
+                </article>
+                <article class="card">
+                    <img src="img/moon.jpg" 
+                        alt="Curso de HTML">
+                    <h2>Curso de HTML</h2>
+                    <p>
+                        Aprende los fundamentos 
+                        del desarrollo web.
+                    </p>
+                    <a href="#" class="button">Ver curso</a>
+                </article>
+                <article class="card">
+                    <img src="img/moon.jpg" 
+                        alt="Curso de HTML">
+                    <h2>Curso de HTML</h2>
+                    <p>
+                        Aprende los fundamentos 
+                        del desarrollo web.
+                    </p>
+                    <a href="#" class="button">Ver curso</a>
+                </article>
+            </div>
+
+
+        </main>
+    </div>
+</body>
+</html>

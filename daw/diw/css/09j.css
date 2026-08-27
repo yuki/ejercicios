@@ -1,0 +1,61 @@
+.accordion {
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 40%;
+}
+
+.accordion details, .accordion .accordion-item {
+    border-bottom: 1px solid #d1d5db;
+}
+
+.accordion details:last-child, .accordion .accordion-item:last-child {
+    border-bottom: none;
+}
+
+
+.accordion summary, .accordion .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: #f3f4f6;
+    padding: 1rem 0rem 1rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    font: inherit;
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+}
+
+.accordion details > :nth-child(n+1) {
+    padding: 1rem;
+}
+
+.accordion-item.is-open .accordion-content {
+    display: block;
+}
+
+.accordion summary::after, .accordion .accordion-header::after {
+    content: "+";
+    padding-right: 2rem;
+}
+.accordion .accordion-header::after {
+    content: "+";
+    padding-right: 1rem;
+}
+
+.accordion details[open] summary::after, .accordion-item.is-open .accordion-header::after {
+    content: "−";
+}
+
+
+
+
+

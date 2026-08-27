@@ -1,0 +1,39 @@
+
+.breadcrumbs2 ol {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* para evitar el enlace, se podría añadir un elemento con JavaScript */
+.breadcrumbs a::after {
+    content: ">";
+    margin: 0 0.5rem;
+}
+
+/* icono en lugar de ">" */
+
+.breadcrumbs2 li + li::before {
+    content: "›";
+    margin: 0 0.5rem;
+}
+
+
+.breadcrumbs a, .breadcrumbs2 a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover , .breadcrumbs2 a:hover {
+    text-decoration: underline;
+}
+
+
+.breadcrumbs2 li:last-child, .breadcrumbs :last-child {
+    color: #374151;
+    font-weight: bold;
+}

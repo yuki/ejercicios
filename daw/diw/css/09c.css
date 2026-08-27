@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box
+}
+
+:root {
+    --color-main: hsl(215, 78%, 57%);
+  /* --color-main:     #1f2937; */
+  --color-hover: hsl(215, 61%, 20%);
+  --bordes: 2px;
+  --radio: 10px;
+}
+
+h1, h2 {
+    color: var(--color-main);
+}
+
+body {
+    padding: 0;
+    margin:0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: var(--color-main);
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+        margin: 0;
+    }
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.header nav .active {
+    border-bottom: 2px solid white;
+}
+
+.header nav a:hover, .sidebar nav a:hover {
+    color: var(--color-hover);
+}
+
+
+/* Si usamo una lista en el nav */
+/* .menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+} */
+
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+.sidebar {
+  padding: 1rem;
+  border-right: 1px solid var(--color-main);
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-main);
+    padding: 0.5rem;
+    border: 1px solid var(--color-main);
+    border-radius: 0.5rem;
+}
+
+.sidebar nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  /* min-height: 100vh; */
+  height: 2000px;
+}
+
+#tarjetas {
+    display: grid;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    
+}
+
+.badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    font-size: 0.915rem;
+    font-weight: bold;
+}
+
+a.button {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        /* si queremos que sea fija */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header nav {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    form {
+        display: inline;
+    }
+
+    .layout {
+        grid-template-columns: 240px 1fr;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        position: sticky;
+        top: 69px;
+        height: 100vh;
+    }
+
+    #tarjetas {
+        /* Usar un número de columnas fijo no es adecuado */
+        /* grid-template-columns: repeat(4,1fr);   */
+
+        /* Hoy día hay que usar el sistema responsive */
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}

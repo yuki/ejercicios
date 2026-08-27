@@ -1,0 +1,51 @@
+.tabla {
+    overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+thead, tfoot {
+  text-align: center;
+  background-color: #2c5e77;
+  color: white;
+}
+
+thead {
+  border-bottom: 2px solid rgb(160 160 160);
+}
+
+tfoot {
+  border-top: 2px solid rgb(160 160 160);
+}
+tfoot th {
+    text-align: end;
+    padding-right: 20px;
+}
+
+tbody {
+  background-color: #e4f0f5;
+}
+
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tbody > tr > td:last-of-type {
+  text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #e5e7eb;
+}

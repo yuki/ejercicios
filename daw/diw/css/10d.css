@@ -1,0 +1,19 @@
+.borde {
+    border: 1px solid black;
+    margin-bottom: 3rem;
+}
+
+.alineacion .row {
+    min-height: 10rem;
+    background-color: lightblue;
+}
+
+.alineacion .row .col, .horizontal .row .col-4 {
+    background-color: lightgreen;
+    padding: 0.75rem 0;
+    border: 1px solid black;
+}
+
+.horizontal .row{
+    margin: 1rem 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/09f.css">
+    <script src="js/09f.js" defer></script>
+</head>
+<body>
+    <h1>Ejemplo de modal</h1>
+
+    <p>Ejemplo obtenido de <a href="https://www.w3schools.com/howto/howto_css_modals.asp">w3schools</a></p>
+
+    <button id="myBtn">Open Modal</button>
+
+    <button popovertarget="my-dialog">Open dialog</button>
+
+    <button popovertarget="custom-dialog">Open custom dialog</button>
+    
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+            <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <dialog id="my-dialog" popover>
+        <p>This dialog was opened using a popovertargetaction attribute.</p>
+        <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
+    </dialog>
+
+
+
+    <dialog id="custom-dialog" popover class="modal-content">
+        <div class="modal-header">
+            <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+
+        <button popovertarget="custom-dialog" popovertargetaction="hide">Close</button>
+    </dialog>
+
+</body>
+</html>

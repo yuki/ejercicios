@@ -1,0 +1,9 @@
+.btn-propio {
+    background-color: red;
+    border-color: brown;
+}
+
+.btn-propio:hover {
+    background-color: chocolate;
+    border-color: brown;
+}
